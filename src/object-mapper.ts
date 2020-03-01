@@ -25,7 +25,9 @@ export class ObjectMapper<Src, Dest, Result = Dest> {
 		return this;
 	}
 
-	public apply(this: Src extends Result? ObjectMapper<Src, Dest, Result> : never) {}
+	public apply<T extends Src extends Result ? ObjectMapper<Src, Dest, Result> : never>(this: T): T {
+		return this;
+	}
 
 	public map(obj: Src): Dest {
 		const destination = new this.Destination();
