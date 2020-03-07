@@ -1,5 +1,5 @@
 {
-  "name": "simple-mapper",
+  "name": "ts-simple-mapper",
   "version": "0.1.0",
   "description": "Simple typescript automapper",
   "main": "./dist/index.js",
@@ -25,7 +25,6 @@
   "homepage": "https://github.com/sandragg/simple-mapper#readme",
   "devDependencies": {
     "@types/jest": "^25.1.4",
-    "@types/node": "^13.9.0",
     "jest": "^25.1.0",
     "pre-commit": "^1.2.2",
     "ts-jest": "^25.2.1",
