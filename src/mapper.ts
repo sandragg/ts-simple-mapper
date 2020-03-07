@@ -4,7 +4,7 @@ import { ClassConstructor } from "./interfaces";
 const mappers = new Map<string, ObjectMapper<any, any>>();
 
 function getMapperUniqueKey(Source: Function, Destination: Function) {
-	return  Source.name.concat(Destination.name);
+	return Source.name.concat(Destination.name);
 }
 
 export function create<Src, Dest>(Source: ClassConstructor<Src>, Destination: ClassConstructor<Dest>) {
@@ -26,5 +26,3 @@ export function map<Src, Dest>(Source: ClassConstructor<Src>, Destination: Class
 	const mapper = get(Source, Destination);
 	return mapper?.map;
 }
-
-export default map;
