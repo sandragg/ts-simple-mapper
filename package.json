@@ -10,7 +10,7 @@
   "scripts": {
     "test": "tsd && jest",
     "build": "tsc",
-    "prepare": "npm run build && npm run test"
+    "prepublishOnly": "npm run build && npm run test"
   },
   "precommit": "test",
   "repository": {
